@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arham's Gaming World</title>
+  <style>
+    body {
+      background-color: #1a1a1a;
+      color: #ffffff;
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    header {
+      background-color: #333333;
+      padding: 1em;
+    }
+
+    h1 {
+      margin-bottom: 0.5em;
+      color: #66ccff;
+    }
+
+    main {
+      padding: 2em;
+    }
+
+    p {
+      font-size: 1.1em;
+      line-height: 1.5em;
+    }
+
+    footer {
+      background-color: #333333;
+      padding: 1em;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    footer p {
+      margin: 0;
+      color: #66ccff;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to Arham's Gaming World!</h1>
+  </header>
+
+  <main>
+    <p>Explore the exciting realms of gaming with Arham. Level up your gaming experience and dive into the virtual adventures that await!</p>
+    <!-- Add more content, such as favorite games, gaming achievements, etc. -->
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Arham - All rights reserved</p>
+  </footer>
+
+</body>
+</html>
+<!-- Add this code within the <main> section -->
+    <div id="imageCarousel">
+        <img src="your_image_url_1.jpg" alt="Gaming Image 1">
+        <img src="your_image_url_2.jpg" alt="Gaming Image 2">
+        <!-- Add more images as needed -->
+      </div>
+      
+      <script>
+        let currentIndex = 0;
+        const images = document.querySelectorAll('#imageCarousel img');
+        
+        function showImage(index) {
+          images.forEach(img => img.style.display = 'none');
+          images[index].style.display = 'block';
+        }
+      
+        function nextImage() {
+          currentIndex = (currentIndex + 1) % images.length;
+          showImage(currentIndex);
+        }
+      
+        setInterval(nextImage, 5000); // Change image every 5 seconds
+      </script>
+      <!-- Add this code within the <main> section -->
+<section id="gamingQuotes">
+    <h2>Gaming Quotes</h2>
+    <p>"Insert your favorite gaming quote here."</p>
+    <p>"Another awesome gaming quote goes here."</p>
+    <!-- Add more quotes as needed -->
+  </section>
+  <!-- Add this code within the <main> section -->
+<section id="contactForm">
+    <h2>Contact Arham</h2>
+    <form action="process_form.php" method="post"> <!-- Replace "process_form.php" with your actual form processing script -->
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+  
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+  
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+  
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+  <!-- Add this code within the <main> section -->
+<section id="favoriteGames">
+    <h2>Favorite Games</h2>
+    <div class="game">
+      <img src="game_image_1.jpg" alt="Game 1">
+      <h3>Game Title 1</h3>
+      <p>A short description or review of the game.</p>
+      <a href="game_link_1" target="_blank">Learn More</a>
+    </div>
+  
+    <div class="game">
+      <img src="game_image_2.jpg" alt="Game 2">
+      <h3>Game Title 2</h3>
+      <p>Another short description or review of the game.</p>
+      <a href="game_link_2" target="_blank">Learn More</a>
+    </div>
+    <!-- Add more games as needed -->
+  </section>
+  <!-- Add this code within the <main> section -->
+<section id="achievements">
+    <h2>Latest Achievements</h2>
+    <ul>
+      <li>Reached level 50 in Game X</li>
+      <li>Completed the epic quest in Game Y</li>
+      <li>Scored a new high score in Game Z</li>
+      <!-- Add more achievements as needed -->
+    </ul>
+  </section>
+  <!-- Add this code within the <footer> section -->
+<footer>
+    <p>&copy; 2024 Arham - All rights reserved | Follow me on: <a href="https://twitter.com/your_twitter" target="_blank">Twitter</a> | <a href="https://www.instagram.com/your_instagram" target="_blank">Instagram</a> | <a href="https://www.twitch.tv/your_twitch" target="_blank">Twitch</a></p>
+  </footer>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arham's Gaming World</title>
+  <style>
+    body {
+      background-color: #000000; /* Choose your preferred background color */
+      color: #ffffff;
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      background-image: url('background_image.jpg'); /* Replace with the path to your background image */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    header {
+      background-color: #333333;
+      padding: 1em;
+    }
+
+    h1 {
+      margin-bottom: 0.5em;
+      color: #66ccff;
+    }
+
+    main {
+      padding: 2em;
+    }
+
+    p {
+      font-size: 1.1em;
+      line-height: 1.5em;
+    }
+
+    /* Add styling for the image carousel */
+    #imageCarousel {
+      max-width: 800px;
+      margin: auto;
+      overflow: hidden;
+    }
+
+    #imageCarousel img {
+      display: none;
+      width: 100%;
+    }
+
+    /* Your existing styles remain unchanged */
+
+    /* Add styling for the contact form */
+    #contactForm {
+      max-width: 600px;
+      margin: auto;
+    }
+
+    #contactForm form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    #contactForm label,
+    #contactForm input,
+    #contactForm textarea,
+    #contactForm button {
+      margin-bottom: 10px;
+    }
+
+    #contactForm button {
+      background-color: #66ccff;
+      color: #000000;
+      padding: 10px;
+      cursor: pointer;
+    }
+
+    /* Add styling for the additional sections */
+    #favoriteGames,
+    #achievements {
+      max-width: 800px;
+      margin: auto;
+      margin-top: 20px;
+    }
+
+    #favoriteGames .game,
+    #achievements ul {
+      margin-bottom: 20px;
+    }
+
+    /* Add styling for the footer */
+    footer {
+      background-color: #333333;
+      padding: 1em;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      color: #66ccff;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Your existing HTML content remains unchanged -->
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arham's Gaming World</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+  <style>
+    body {
+      background-color: #1f1f1f;
+      color: #ffffff;
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      background-image: url('background_image.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 100vh;
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    header {
+      background-color: #333333;
+      padding: 1em;
+      box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    h1 {
+      margin-bottom: 0.5em;
+      color: #66ccff;
+    }
+
+    main {
+      padding: 2em;
+      position: relative;
+      z-index: 1;
+    }
+
+    p {
+      font-size: 1.1em;
+      line-height: 1.5em;
+    }
+
+    #imageCarousel {
+      max-width: 800px;
+      margin: auto;
+      overflow: hidden;
+      margin-top: 20px;
+    }
+
+    #imageCarousel img {
+      display: none;
+      width: 100%;
+    }
+
+    #favoriteGames,
+    #achievements {
+      max-width: 800px;
+      margin: auto;
+      margin-top: 40px;
+    }
+
+    .game {
+      background-color: #333333;
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .game img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    .game h3 {
+      color: #66ccff;
+    }
+
+    #gamingQuotes {
+      max-width: 600px;
+      margin: auto;
+      margin-top: 40px;
+    }
+
+    #gamingQuotes h2 {
+      color: #66ccff;
+    }
+
+    #contactForm {
+      max-width: 600px;
+      margin: auto;
+      margin-top: 40px;
+    }
+
+    #contactForm form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    #contactForm label,
+    #contactForm input,
+    #contactForm textarea,
+    #contactForm button {
+      margin-bottom: 10px;
+    }
+
+    #contactForm button {
+      background-color: #66ccff;
+      color: #000000;
+      padding: 10px;
+      cursor: pointer;
+      border: none;
+      border-radius: 8px;
+      transition: background-color 0.3s ease-in-out;
+    }
+
+    #contactForm button:hover {
+      background-color: #4fa3e3;
+    }
+
+    footer {
+      background-color: #333333;
+      padding: 1em;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      color: #66ccff;
+      box-shadow: 0px -3px 10px rgba(0, 0, 0, 0.2);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to Arham's Gaming World!</h1>
+  </header>
+
+  <main>
+    <p>Explore the exciting realms of gaming with Arham. Level up your gaming experience and dive into the virtual adventures that await!</p>
+
+    <div id="imageCarousel">
+      <img src="your_image_url_1.jpg" alt="Gaming Image 1">
+      <img src="your_image_url_2.jpg" alt="Gaming Image 2">
+    </div>
+
+    <section id="favoriteGames">
+      <h2>Favorite Games</h2>
+      <div class="game">
+        <img src="game_image_1.jpg" alt="Game 1">
+        <h3>Game Title 1</h3>
+        <p>A short description or review of the game.</p>
+        <a href="game_link_1" target="_blank">Learn More</a>
+      </div>
+
+      <div class="game">
+        <img src="game_image_2.jpg" alt="Game 2">
+        <h3>Game Title 2</h3>
+        <p>Another short description or review of the game.</p>
+        <a href="game_link_2" target="_blank">Learn More</a>
+      </div>
+    </section>
+
+    <section id="achievements">
+      <h2>Latest Achievements</h2>
+      <ul>
+        <li>Reached level 50 in Game X</li>
+        <li>Completed the epic quest in Game Y</li>
+        <li>Scored a new high score in Game Z</li>
+      </ul>
+    </section>
+
+    <section id="gamingQuotes">
+      <h2>Gaming Quotes</h2>
+      <p>"Insert your favorite gaming quote here."</p>
+      <p>"Another awesome gaming quote goes here."</p>
+    </section>
+
+    <section id="contactForm">
+      <h2>Contact Arham</h2>
+      <form action="process_form.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Arham - All rights reserved | Follow me on: <a href="https://twitter.com/your_twitter" target="_blank">Twitter</a> | <a href="https://www.instagram.com/your_instagram" target="_blank">Instagram</a> | <a href="https://www.twitch.tv/your_twitch" target="_blank">Twitch</a></p>
+  </footer>
+
+</body>
+</html>
+<!-- Add this code within the <main> section -->
+    <section id="embeddedGame">
+        <h2>Play an Exciting Game!</h2>
+        <iframe src="https://www.coolmathgames.com/0-2048" width="100%" height="600px" frameborder="0"></iframe>
+      </section>
+      <main>
+        <p>Explore the exciting realms of gaming with Arham. Level up your gaming experience and dive into the virtual adventures that await!</p>
+      
+        <div id="imageCarousel">
+          <img src="your_image_url_1.jpg" alt="Gaming Image 1">
+          <img src="your_image_url_2.jpg" alt="Gaming Image 2">
+        </div>
+      
+        <section id="favoriteGames">
+          <!-- Existing favorite games content -->
+        </section>
+      
+        <section id="achievements">
+          <!-- Existing achievements content -->
+        </section>
+      
+        <section id="gamingQuotes">
+          <!-- Existing gaming quotes content -->
+        </section>
+      
+        <section id="contactForm">
+          <!-- Existing contact form content -->
+        </section>
+      
+        <!-- Newly added embedded game section -->
+        <section id="embeddedGame">
+          <h2>Play an Exciting Game!</h2>
+          <iframe src="https://www.coolmathgames.com/0-2048" width="100%" height="600px" frameborder="0"></iframe>
+        </section>
+      
+      </main>
+      
